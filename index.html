@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Preference Saver</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>User Preferences</h1>
+
+    <label>Background Color: <input type="color" id="colorPicker" /></label><br/><br/>
+    <label>Font Size:
+      <select id="fontSize">
+        <option value="16px">Normal</option>
+        <option value="20px">Large</option>
+        <option value="24px">Extra Large</option>
+      </select>
+    </label><br/><br/>
+
+    <label>Theme:
+      <select id="themeSelect">
+        <option value="light">Light</option>
+        <option value="dark">Dark</option>
+      </select>
+    </label><br/><br/>
+
+    <button id="saveBtn" onclick="savePreferences()">Save Preferences</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
